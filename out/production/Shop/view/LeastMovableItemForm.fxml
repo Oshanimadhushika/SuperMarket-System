@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LeastMovableItemContext" prefHeight="581.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LeastMovableItemFormController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="971.0" layoutX="28.0" layoutY="92.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-05-23%20at%2010.38.04%20AM.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="388.0" layoutY="21.0" text="Least Movable Item " textFill="#123aba">
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+      </Label>
+      <Line endX="847.0" endY="7.62939453125E-6" layoutX="162.0" layoutY="14.0" startX="-147.0" stroke="#2a4eda" strokeWidth="4.0" />
+      <Line endX="856.0" endY="-9.0" layoutX="162.0" layoutY="568.0" startX="-151.0" startY="-1.5" stroke="#2a4eda" strokeWidth="4.0" />
+      <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="290.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/trolley.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2780e" height="344.0" layoutX="41.0" layoutY="161.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="938.0" />
+      <TableView fx:id="tblILeastMovabletem" layoutX="206.0" layoutY="200.0" prefHeight="287.0" prefWidth="627.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="100.0" text="ItemCode" />
+            <TableColumn fx:id="colDescription" prefWidth="137.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="106.0" text="UnitPrice" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="129.0" text="QtyOnHand" />
+            <TableColumn fx:id="colOrderQty" prefWidth="154.0" text="Order QTY" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

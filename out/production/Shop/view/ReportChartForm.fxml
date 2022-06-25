@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ChartReportContext" prefHeight="582.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="ChartReportContext1" layoutX="7.0" layoutY="7.0" prefHeight="581.0" prefWidth="1038.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8e135" height="569.0" layoutX="6.0" layoutY="10.0" opacity="0.24" stroke="BLACK" strokeType="INSIDE" width="1017.0" />
+            <BarChart layoutX="14.0" layoutY="51.0" prefHeight="256.0" prefWidth="483.0">
+               <xAxis>
+                  <CategoryAxis label="DAY" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="INCOME" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Text layoutX="217.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+            <BarChart layoutX="533.0" layoutY="51.0" prefHeight="256.0" prefWidth="483.0">
+               <xAxis>
+                  <CategoryAxis label="Month" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="INCOME" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Text layoutX="745.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+            <BarChart layoutX="363.0" layoutY="312.0" prefHeight="256.0" prefWidth="483.0">
+               <xAxis>
+                  <CategoryAxis label="Year" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="INCOME" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Text layoutX="551.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annually Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

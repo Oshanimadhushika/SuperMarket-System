@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CashierFormContext" prefHeight="581.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierFormController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="971.0" layoutX="28.0" layoutY="92.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-05-23%20at%2010.38.04%20AM.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#783e0b" height="333.0" layoutX="81.0" layoutY="161.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="851.0" />
+      <Label layoutX="388.0" layoutY="21.0" text="CASHIER" textFill="#123aba">
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+      </Label>
+      <Line endX="847.0" endY="7.62939453125E-6" layoutX="162.0" layoutY="14.0" startX="-147.0" stroke="#2a4eda" strokeWidth="4.0" />
+      <Line endX="856.0" endY="-9.0" layoutX="162.0" layoutY="568.0" startX="-151.0" startY="-1.5" stroke="#2a4eda" strokeWidth="4.0" />
+      <Button fx:id="btnPlaceOrder" layoutX="384.0" layoutY="313.0" mnemonicParsing="false" onAction="#PlaceOrderOnAction" prefHeight="49.0" prefWidth="260.0" style="-fx-background-color: #fd79a8;" text="PLACE  ORDERS" textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMakecustomerOrder" layoutX="384.0" layoutY="205.0" mnemonicParsing="false" onAction="#MakeCustomerOrderOnAction" prefHeight="49.0" prefWidth="260.0" style="-fx-background-color: #fd79a8;" text="MANAGE CUSTOMER " textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="300.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-03-13%20at%2012.49.17%20PM%20(1).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="290.0" layoutY="309.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/order.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="300.0" layoutY="201.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-03-13%20at%2012.49.17%20PM%20(2).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="43.0" layoutY="38.0" onMouseClicked="#ArrowBackMouseClick" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/left-arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnManageOrder" layoutX="382.0" layoutY="419.0" mnemonicParsing="false" onAction="#ManageOrderOnAction" prefHeight="49.0" prefWidth="260.0" style="-fx-background-color: #fd79a8;" text="Search  ORDERS" textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="290.0" layoutY="415.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/essay.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

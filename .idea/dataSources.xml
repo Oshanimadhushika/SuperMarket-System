@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="SuperMarket@localhost" uuid="aee57e12-e0c1-43fa-b731-4c6ac84021fa">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/SuperMarket</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="supermarket@localhost" uuid="9c24b95e-a0ab-4c9d-94eb-946a01336120">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/supermarket</jdbc-url>
+    </data-source>
+  </component>
+</project>

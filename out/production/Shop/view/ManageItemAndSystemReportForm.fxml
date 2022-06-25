@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ReportAndItemContext" prefHeight="710.0" prefWidth="1303.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemAndSystemReportFormController">
+   <children>
+      <AnchorPane fx:id="ReportAndItemContext2" layoutX="232.0" layoutY="85.0" prefHeight="581.0" prefWidth="1038.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd52e" height="569.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="1017.0" />
+            <BarChart fx:id="ChartMonthlyIncome" layoutX="519.0" layoutY="35.0" prefHeight="256.0" prefWidth="483.0">
+               <xAxis>
+                  <CategoryAxis fx:id="Month_X" label="Month" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="MonthlyIncome_Y" label="INCOME" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <BarChart fx:id="ChartDaillyIncome" layoutX="26.0" layoutY="42.0" prefHeight="256.0" prefWidth="483.0">
+              <xAxis>
+                <CategoryAxis fx:id="Day_X" label="DAY" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="DayIncome_Y" label="INCOME" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Text layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="722.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+            <BarChart fx:id="ChartAnnuallyIncome" layoutX="292.0" layoutY="285.0" prefHeight="256.0" prefWidth="483.0">
+               <xAxis>
+                  <CategoryAxis fx:id="Year_X" label="Year" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="AnnualIncome_y" label="INCOME" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Text layoutX="482.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annually Income">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="569.0" fitWidth="174.0" layoutX="31.0" layoutY="89.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-05-23%20at%2010.38.04%20AM.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="77.0" layoutX="38.0" layoutY="106.0" opacity="0.27" stroke="BLACK" strokeType="INSIDE" width="156.0" />
+      <Line endX="1119.0" endY="7.62939453125E-6" layoutX="162.0" layoutY="14.0" startX="-147.0" stroke="#2a4eda" strokeWidth="4.0" />
+      <Line endX="1114.843017578125" endY="-2.67156982421875" layoutX="166.0" layoutY="687.0" startX="-153.5" startY="2.0" stroke="#2a4eda" strokeWidth="4.0" />
+      <Line endX="-100.5" endY="496.0" layoutX="115.0" layoutY="191.0" startX="-100.5" startY="-176.5" stroke="#3869e4" strokeWidth="4.0" />
+      <Line endX="-97.3287353515625" endY="473.5" layoutX="1381.0" layoutY="208.0" startX="-97.171630859375" startY="-194.0" stroke="#3869e4" strokeWidth="4.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="77.0" layoutX="38.0" layoutY="570.0" opacity="0.27" stroke="BLACK" strokeType="INSIDE" width="156.0" />
+      <Button fx:id="btnSystemReport" layoutX="46.0" layoutY="120.0" mnemonicParsing="false" onAction="#SystemReportOnAction" prefHeight="49.0" prefWidth="134.0" style="-fx-background-color: #f9ca24;" text="SYSTEM  REPORT" textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnManageItems" layoutX="46.0" layoutY="584.0" mnemonicParsing="false" onAction="#ManageItemsOnAction" prefHeight="49.0" prefWidth="140.0" style="-fx-background-color: #f9ca24;" text="MANAGE  ITEMS" textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="17.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3f5161" height="60.0" layoutX="30.0" layoutY="20.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" width="1230.0" />
+      <Label layoutX="356.0" layoutY="20.0" prefHeight="57.0" prefWidth="548.0" text="THE BLUE BUCK MARKET" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="48.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="118.0" layoutY="273.0" opacity="0.27" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="btnMostMoveableItem" layoutX="48.0" layoutY="249.0" mnemonicParsing="false" onAction="#MostMoveableItemOnAction" prefHeight="49.0" prefWidth="140.0" style="-fx-background-color: #FDA7DF;" text="MOST MOVEABLE ITEM" textFill="#0a0101">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+      </Button>
+      <Circle fill="DODGERBLUE" layoutX="113.0" layoutY="457.0" opacity="0.27" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="btnleastMoveableItem" layoutX="43.0" layoutY="433.0" mnemonicParsing="false" onAction="#leastMoveableItemOnAction" prefHeight="49.0" prefWidth="140.0" style="-fx-background-color: #FDA7DF;" text="LEAST MOVEABLE ITEM" textFill="#1e0303">
+         <font>
+            <Font name="Impact" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="49.0" fitWidth="99.0" layoutX="257.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../GDSE59_Final%20Project_E.K.O.M/Cake-Bakery/src/asserts/WhatsApp%20Image%202022-03-13%20at%2012.49.17%20PM.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="970.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="971.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="1028.0" layoutY="24.0" prefHeight="20.0" prefWidth="134.0" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="1028.0" layoutY="55.0" prefHeight="20.0" prefWidth="134.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fafdff" height="41.0" layoutX="39.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="49.0" />
+      <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="48.0" layoutY="35.0" onMouseClicked="#ArrowBackMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/left-arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
